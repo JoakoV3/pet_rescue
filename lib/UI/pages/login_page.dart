@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pet_rescue/widget/custom_input.dart';
+import 'package:pet_rescue/UI/widget/custom_input.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -66,7 +68,7 @@ class _FormState extends State<_Form> {
           CustomInput(icon: Icons.email, placeholder: 'Email', keyboardType: TextInputType.emailAddress, controller: emailCtrl),
           CustomInput(icon: Icons.lock_outline, placeholder: 'Password', controller: passwordCtrl, isPassword: true),
           ElevatedButton(
-            style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.blue[600])),
+            style: ButtonStyle(backgroundColor: WidgetStateProperty.all(Colors.blue[600])),
             child: const SizedBox(
               width: double.infinity,
               child: Center(child: Text('Login', style: TextStyle(color: Colors.white))),

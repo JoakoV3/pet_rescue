@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:pet_rescue/pages/chat_page.dart';
-import 'package:pet_rescue/pages/loading_page.dart';
-import 'package:pet_rescue/pages/login_page.dart';
-import 'package:pet_rescue/pages/register_page.dart';
-import 'package:pet_rescue/pages/users_page.dart';
+import 'package:pet_rescue/UI/pages/chat_page.dart';
+import 'package:pet_rescue/UI/pages/loading_page.dart';
+import 'package:pet_rescue/UI/pages/login_page.dart';
+import 'package:pet_rescue/UI/pages/register_page.dart';
+import 'package:pet_rescue/UI/pages/users_page.dart';
 
 final Map<String, Widget Function(BuildContext)> appRoutes = {
   'users': (_) => UsersPage(),
